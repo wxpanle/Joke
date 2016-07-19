@@ -1,0 +1,108 @@
+//
+//  Joke.pch
+//  Joke
+//
+//  Created by qianfeng on 16/6/15.
+//  Copyright © 2016年 潘乐. All rights reserved.
+//
+
+#ifndef Joke_pch
+#define Joke_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+
+#pragma mark ----第三方库----
+#import "AFNetworking.h" //网络请求
+#import "MJRefresh.h" //下拉刷新，上拉加载
+#import "UIImageView+WebCache.h" //给imageView加载图片
+#import "Masonry.h"
+#import "UIImage+GIF.h"
+#import "CoreData+MagicalRecord.h"//数据库
+
+#pragma mark ----宏定义----
+#define SCREEN_W [UIScreen mainScreen].bounds.size.width //屏幕宽度
+#define SCREEN_H [UIScreen mainScreen].bounds.size.height //屏幕高度
+
+#pragma mark ----接口----
+
+//排行
+#define JOKE_RECOMMEND @"http://s.budejie.com/topic/list/remen/1/baisishequ-iphone-4.0/%ld-3.json"
+
+//段子
+#define JOKE_JOKE @"http://s.budejie.com/topic/tag-topic/64/hot/baisishequ-iphone-4.0/%ld-20.json"
+
+//图片
+#define JOKE_IMAGE @"http://s.budejie.com/topic/list/jingxuan/10/baisishequ-iphone-4.0/%ld-20.json"
+
+//视频
+#define JOKE_VIDEO @"http://s.budejie.com/topic/list/jingxuan/41/baisishequ-iphone-4.0/%ld-20.json"
+
+//冷知识
+#define JOKE_COLDKNOWLEDGE @"http://s.budejie.com/topic/tag-topic/3176/hot/baisishequ-iphone-4.0/%ld-20.json"
+
+//网红
+#define JOKE_NET @"http://s.budejie.com/topic/tag-topic/3096/hot/baisishequ-iphone-4.0/%ld-20.json"
+
+//社会
+#define JOKE_SOCIETY @"http://s.budejie.com/topic/tag-topic/473/hot/baisishequ-iphone-4.0/%ld-20.json"
+
+//美女
+#define JOKE_BEAUTY @"http://s.budejie.com/topic/tag-topic/117/hot/baisishequ-iphone-4.0/%ld-20.json"
+
+//游戏
+#define JOKE_GAME @"http://s.budejie.com/topic/tag-topic/164/hot/baisishequ-iphone-4.0/%ld-20.json"
+
+/*冷知识
+ "comment": "10",
+ "text": "带你4分钟看完《魔兽世界》源起故事",
+ "share_url": "http://c.f.winapp111.net/share/18903539.html?wx.qq.com",
+ "top_comment": {
+ 
+    "content": "前面都是掩饰，最后那个冰冻的才是目的。",
+    "u": {
+    "header": [
+    "http://qzapp.qlogo.cn/qzapp/100336987/D02FB263C74CF3474A24FC45455A7884/100",
+    "http://qzapp.qlogo.cn/qzapp/100336987/D02FB263C74CF3474A24FC45455A7884/100"
+    ],
+ 
+    "name": "丨封丨印丨"
+ },
+ "preuid": 0,
+ "voiceuri": "",
+ "id": 54272670
+ },
+ "u": {
+ "header": [
+ "http://wimg.spriteapp.cn/profile/picture2/M00/0A/78/wKiFRlO5Om-AcF3fAAC4g-ofPUo583.jpg",
+ "http://dimg.spriteapp.cn/profile/picture2/M00/0A/78/wKiFRlO5Om-AcF3fAAC4g-ofPUo583.jpg"
+ ],
+ "name": "用户5173404163"
+ },
+ "video": {
+ "playfcount": 1209,
+ "height": 480,
+ "width": 848,
+ "video": [
+    "http://bvideo.spriteapp.cn/video/2016/0613/eaa9b08c-310b-11e6-a06d-d4ae5296039d_wpd.mp4",
+    "http://wvideo.spriteapp.cn/video/2016/0613/eaa9b08c-310b-11e6-a06d-d4ae5296039d_wpd.mp4"
+    ],
+    "thumbnail": [
+    "http://wimg.spriteapp.cn/picture/2016/0613/eaa9b08c-310b-11e6-a06d-    d4ae5296039d_wpd.jpg",
+    "http://dimg.spriteapp.cn/picture/2016/0613/eaa9b08c-310b-11e6-a06d-d4ae5296039d_wpd.jpg"
+    ],
+    "download": [
+    "http://bvideo.spriteapp.cn/video/2016/0613/eaa9b08c-310b-11e6-a06d-d4ae5296039d_wpc.mp4",
+    "http://wvideo.spriteapp.cn/video/2016/0613/eaa9b08c-310b-11e6-a06d-d4ae5296039d_wpc.mp4"
+    ]
+ },
+ "type": "video",
+ "id": "18903539"
+ }*/
+
+
+#endif
+
+#endif /* Joke_pch */
