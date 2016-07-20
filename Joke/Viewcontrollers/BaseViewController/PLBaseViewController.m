@@ -423,10 +423,12 @@
     } else if ([str isEqualToString:@"冷知识"]) {
         self.navigationItem.title = str;
         _dataUrl = JOKE_COLDKNOWLEDGE;
-    } else if ([str isEqualToString:@"美女"]) {
-        self.navigationItem.title = str;
-        _dataUrl = JOKE_BEAUTY;
-    } else if ([str isEqualToString:@"社会"]) {
+    }
+//    else if ([str isEqualToString:@"美女"]) {
+//        self.navigationItem.title = str;
+//        _dataUrl = JOKE_BEAUTY;
+//    }
+    else if ([str isEqualToString:@"社会"]) {
         self.navigationItem.title = str;
         _dataUrl = JOKE_SOCIETY;
     } else if ([str isEqualToString:@"游戏"]) {
@@ -461,7 +463,8 @@
 
 - (NSArray *)resourceArray {
     
-    return @[@{@"title" : @"排行", @"image" : @"pl_recommend.png"}, @{@"title" : @"段子", @"image" : @"pl_joke.png"}, @{@"title" : @"趣图", @"image" : @"pl_image.png"}, @{@"title" : @"视频", @"image" : @"pl_video.png"}, @{@"title" : @"冷门", @"image" : @"pl_coldKnowLedge.png"}, @{@"title" : @"网红", @"image" : @"pl_net.png"}, @{@"title" : @"社会", @"image" : @"pl_society.png"}, @{@"title" : @"美女", @"image" : @"pl_beauty.png"}, @{@"title" : @"游戏", @"image" : @"pl_game.png"}];
+    return @[@{@"title" : @"排行", @"image" : @"pl_recommend.png"}, @{@"title" : @"段子", @"image" : @"pl_joke.png"}, @{@"title" : @"趣图", @"image" : @"pl_image.png"}, @{@"title" : @"视频", @"image" : @"pl_video.png"}, @{@"title" : @"冷门", @"image" : @"pl_coldKnowLedge.png"}, @{@"title" : @"网红", @"image" : @"pl_net.png"}, @{@"title" : @"社会", @"image" : @"pl_society.png"},  @{@"title" : @"游戏", @"image" : @"pl_game.png"}];
+//    @{@"title" : @"美女", @"image" : @"pl_beauty.png"},
     
 }
 
@@ -505,10 +508,12 @@
     } else if (index == 6) {
         _dataUrl = JOKE_SOCIETY;
         self.navigationItem.title = @"社会";
-    } else if (index == 7) {
-        _dataUrl = JOKE_BEAUTY;
-        self.navigationItem.title = @"美女";
-    } else if (index == 8) {
+    }
+//    else if (index == 7) {
+//        _dataUrl = JOKE_BEAUTY;
+//        self.navigationItem.title = @"美女";
+//    }
+    else if (index == 7) {
         _dataUrl = JOKE_GAME;
         self.navigationItem.title = @"游戏";
     } else {

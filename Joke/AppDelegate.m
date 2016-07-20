@@ -50,7 +50,7 @@
     label.textColor = [UIColor blackColor];
     label.lineBreakMode = NSLineBreakByWordWrapping;
     [view addSubview:label];
-    label.text = @"请仔细阅读以下条款\n(1)该app仅仅用于娱乐.\n(2)若有内容使你反感,请忽略此内容,为此给你带来的不悦,我们深表歉意.\n(3)所有内容不提供下载和转发,在您app结束进程后,会自动消失.\n(4)由于技术有限,我们会在之后的版本中提供反馈机制,以用来消除反感内容.\n(5)非常感谢您的理解.";
+    label.text = @"请仔细阅读以下条款\n(1)该app的所有内容目的仅仅是为了娱乐.\n(2)若有内容使你反感,请忽略此内容,为此给你带来的不悦,我们深表歉意.\n(3)所有内容不提供下载和转发,在您app结束进程后,会自动消失.\n(4)由于技术有限,我们会在之后的版本中提供反馈机制,以用来消除反感内容.\n(5)非常感谢您的理解.";
     [self.window addSubview:view];
     
     CGFloat height = [self plGetHeightForString:label.text andFontSize:15];

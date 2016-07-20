@@ -1101,7 +1101,6 @@
 				TargetAttributes = {
 					BCE11F881D1126A100C6DDE0 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = MYPMVT29JY;
 					};
 					BCE11FA11D1126A100C6DDE0 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -1431,7 +1430,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Wei Ge (MYPMVT29JY)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Wei Ge (MYPMVT29JY)";
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Joke/Joke.pch";
@@ -1449,7 +1448,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Wei Ge (MYPMVT29JY)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Wei Ge (MYPMVT29JY)";
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Joke/Joke.pch";
